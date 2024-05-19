@@ -8,12 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
 
 
 
 &mt {
-    tapping-term-ms = <251>;
+    tapping-term-ms = <201>;
     flavor = "tap-preferred";
  };
 &sk {
@@ -140,12 +139,10 @@
 		bindings = < &sl AL2U >;
 	};
     };
-
-
 // 				0		1		2					3		4			5
 // 		6		7		8		9 					10		11			12 		13
 //								14	15 	16 	17		
-      keymap {
+       keymap {
                 compatible = "zmk,keymap";
                 
                 alpha1 {
@@ -178,8 +175,8 @@
         sym2 {
         label = "Punct";
         bindings = <
-                    &kp ATSN    &kp QMARK        &prettier                 &kp LPRN    &kp RPRN    &kp LS(MINUS) 
-        &kp SEMI    &kp PRCNT   &kp EXCL         &ws_find                  &kp LBRC    &kp RBRC    &kp AMPS    &kp COLON
+                    &kp ATSN    &kp QMARK        &kp A                 &kp LPRN    &kp RPRN    &kp LS(MINUS) 
+        &kp SEMI    &kp PRCNT   &kp EXCL         &kp A                  &kp LBRC    &kp RBRC    &kp AMPS    &kp COLON
                                 &trans           &trans                    &trans      &trans
 
         >;
