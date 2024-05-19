@@ -185,8 +185,8 @@
 
 		sys {
 		bindings = <
-				 	&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			
-		&td LG(GRAVE) TAB	&td HOME DEL		&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
+				 	&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&kp BKSP 			
+		&td LG(GRAVE) TAB	&td HOME DEL		&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&kp RIGHT 	&kp RET 
 		 			 		 				&sr LSHIFT AL1 		&none &none &kp RGUI		
 		>;
 		};
@@ -201,8 +201,8 @@
 
        		alpha2cap {
 		bindings = <
-		 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&trans		&kp LS(Z)	
-		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
+		 	 	&kp LS(V)	&kp LS(W)	&kp LS(P) 	 	&kp LS(F)    	&trans		&kp LS(Z)	
+		&kp LS(Q) 	&kp LS(Z) 	&kp LS(X)	&kp LS(B)		&kp LS(K)	&kp DQT 	&kp LS(Y)	&kp COMMA 
 			 	&trans 		&trans 			&trans	&none
 		>;
 		};
