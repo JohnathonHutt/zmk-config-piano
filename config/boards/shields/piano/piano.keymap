@@ -147,31 +147,30 @@
                 
        		alpha1 {
 		bindings = <
-		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
-		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
+		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL C	  
+		&hl_l NM1 A	&hl_l SM2 R	&hl_l SM1 S	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 I 	&hl_r NM1 O
 			 	 		 		&mt LC(LS(LALT)) SPC &key_repeat  &caps_alpha2macro	&alpha2macro	 	
 		>;
 		};
        		alpha2 {
 		bindings = <
-		 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT			&kp Z 		
-		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT			&kp X		&kp Y 
+		 	 	&kp V 		&kp W		&kp P	 	 	&kp M    	&kp J			&kp F 		
+		&kp Q	 	&kp Q 		&kp Z		&kp X 			&kp B 		&kp SQT			&kp Y		&kp DOT 
 			 	 		 		&sk LSHIFT 		&none &none &sl AL2U	
 		>;
 		};
 		
        		sym1 {
 		bindings = <
-		 		&kp LA(N3)   	&kp LS(N3)	&kp DLLR	    	&kp LS(COMMA)	&kp LS(DOT)		&kp CARET	
-		&kp GRAVE	&kp TILDE 	&kp MINUS      	&kp BSLH	 	&kp LBKT	&kp RBKT	 	&kp PIPE 	&kp SLASH
-				  				&trans  		&trans		&trans  	&trans
-		>;
-		};
+		 		&kp STAR     &kp LS(N3)  &kp DLLR                       &kp LS(COMMA)   &kp LS(DOT)     &kp MINUS	
+		 &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET                      &kp LBKT        &kp RBKT        &kp PIPE    &kp SLASH
+                                &trans      &trans                         &trans          &trans
+        >;
 		sym2 {
 		bindings = <
-				&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))	&kp LPRN	&kp RPRN 	&kp SEMI 	
-		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   			&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		 		&trans 		&trans  			&trans 	&none &none &trans 		
+				&kp ATSN        &kp QMARK 	&td  LA(LBKT) LA(LS(LBKT))	                &kp LPRN    &kp RPRN    &kp LS(MINUS) 	
+		    &kp SEMI    &kp PRCNT       &kp EXCL        &kp DQT   			                &kp LBRC    &kp RBRC	&kp AMPS	&kp COLON 
+		 		&trans 		&trans  			                                &trans 	&trans 		
 
 		>;
 		};
