@@ -12,7 +12,7 @@
 
 
 &mt {
-    tapping-term-ms = <201>;
+    tapping-term-ms = <251>;
     flavor = "tap-preferred";
  };
 &sk {
@@ -24,10 +24,10 @@
 #define AL1 0
 #define AL2 1
 #define SM1 2
-#define SM2 3	
-#define NM1 4	
+#define SM2 3
+#define NUM 4
 #define SYS 5
-#define BT 6	
+#define FUN 6
 #define AL2U 7
 / { 
     combos {
@@ -138,6 +138,31 @@
 		#binding-cells = <0>;
 		bindings = < &sl AL2U >;
 	};
+    };
+
+    macros {
+    ws_find: ws_find {
+        compatible = "zmk,behavior-macro";
+        label = "ws_find_macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_tap>,
+            <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+    };
+    prettier: prettier {
+        compatible = "zmk,behavior-macro";
+        label = "prettier_macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_press>,
+            <&kp LEFT_CONTROL &kp LEFT_ALT &kp O>,
+            <&macro_release>,
+            <&kp LEFT_CONTROL &kp LEFT_ALT &kp O>,
+            <&macro_press>,
+            <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LEFT_ALT &kp P>,
+            <&macro_release>,
+            <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LEFT_ALT &kp P>;
+    };
     };
 // 				0		1		2					3		4			5
 // 		6		7		8		9 					10		11			12 		13
